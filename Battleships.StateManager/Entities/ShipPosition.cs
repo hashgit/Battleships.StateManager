@@ -1,4 +1,4 @@
-﻿namespace Battleships.StateManager.Models
+﻿namespace Battleships.StateManager.Entities
 {
     public class ShipPosition
     {

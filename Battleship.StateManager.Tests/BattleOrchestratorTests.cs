@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Battleships.StateManager;
 using Battleships.StateManager.Models;
+using Battleships.StateManager.Services;
 using Xunit;
 
 namespace Battleship.StateManager.Tests
@@ -13,10 +14,10 @@ namespace Battleship.StateManager.Tests
         {
             var scenario = new BattleScenario
             {
-                Plain = new Plain(10, 10),
+                Plain = new Plain { Xsize = 10, Ysize = 10},
                 Battleships = new List<Battleships.StateManager.Models.Battleship>
                 {
-                    new Battleships.StateManager.Models.Battleship(new Position(5, 2), new Position(5, 6))
+                    new Battleships.StateManager.Models.Battleship { Start = new Position(5, 2), End = new Position(5, 6) }
                 },
                 ShotPoints = new List<Position>
                 {
@@ -24,7 +25,7 @@ namespace Battleship.StateManager.Tests
                 }
             };
 
-            var gameOrchestrator = new BattleOrchestrator();
+            var gameOrchestrator = new BattleOrchestrator(new BattleService());
             var result = gameOrchestrator.Execute(scenario);
 
             Assert.False(result.IsError);
@@ -37,10 +38,10 @@ namespace Battleship.StateManager.Tests
         {
             var scenario = new BattleScenario
             {
-                Plain = new Plain(10, 10),
+                Plain = new Plain { Xsize = 10, Ysize = 10 },
                 Battleships = new List<Battleships.StateManager.Models.Battleship>
                 {
-                    new Battleships.StateManager.Models.Battleship(new Position(5, 2), new Position(5, 6))
+                    new Battleships.StateManager.Models.Battleship { Start = new Position(5, 2), End = new Position(5, 6) }
                 },
                 ShotPoints = new List<Position>
                 {
@@ -52,7 +53,7 @@ namespace Battleship.StateManager.Tests
                 }
             };
 
-            var gameOrchestrator = new BattleOrchestrator();
+            var gameOrchestrator = new BattleOrchestrator(new BattleService());
             var result = gameOrchestrator.Execute(scenario);
 
             Assert.False(result.IsError);

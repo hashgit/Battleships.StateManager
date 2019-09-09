@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Battleships.StateManager", "Battleships.StateManager\Battleships.StateManager.csproj", "{8166A81D-CC81-4220-A03E-22AAB5F766B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.StateManager.Tests", "Battleship.StateManager.Tests\Battleship.StateManager.Tests.csproj", "{931A19BE-1DC5-4BBB-8D5A-710C553DE90A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Battleship.StateManager.Tests", "Battleship.StateManager.Tests\Battleship.StateManager.Tests.csproj", "{931A19BE-1DC5-4BBB-8D5A-710C553DE90A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleships.StateManager.Console", "Battleships.StateManager.Console\Battleships.StateManager.Console.csproj", "{094D2E93-3EB9-411D-AD8F-EC939259679C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{931A19BE-1DC5-4BBB-8D5A-710C553DE90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{931A19BE-1DC5-4BBB-8D5A-710C553DE90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{931A19BE-1DC5-4BBB-8D5A-710C553DE90A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094D2E93-3EB9-411D-AD8F-EC939259679C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094D2E93-3EB9-411D-AD8F-EC939259679C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094D2E93-3EB9-411D-AD8F-EC939259679C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094D2E93-3EB9-411D-AD8F-EC939259679C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
